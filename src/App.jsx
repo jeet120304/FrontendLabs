@@ -5,6 +5,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from './components/Home/Home'
 import Subjects from './components/questions/Subjects'
 import HtmlQuestion from './components/questions/HTMLQuestions/HtmlQuestion'
+import About from './components/About/About'
+import Questions from './components/questions/Questions'
+import Contact from './components/Contact/Contact'
+import CSSQuestions from './components/questions/CSSQuestions/CSSQuestions'
+import ReactQuestion from './components/questions/ReactQuestions/ReactQuestion'
+import JavaScriptQuestion from './components/questions/JavascriptQuestions/JavascriptQuestion'
+
 function App() {
   const route=createBrowserRouter([
     {
@@ -13,7 +20,34 @@ function App() {
       children:[
         {
           path:"/",
-          element:<Home/>
+          element:<Home/>,
+          // children:[
+          //   {
+          //     path:"/about",
+          //     element:<About/>
+          //   },
+          //   {
+          //     path:"/questions",
+          //     element:<Questions/>
+          //   },
+          //   {
+          //     path:"/contact",
+          //     element:<Contact/>
+          //   }
+           
+          // ]
+        },
+        {
+          path:"/about",
+          element:<About/>
+        },
+        {
+          path:"/questions",
+          element:<Questions/>
+        },
+        {
+          path:"/contact",
+          element:<Contact/>
         },
         {
           path:"/subjects",
@@ -22,6 +56,18 @@ function App() {
             {
               path:"/subjects/html",
               element:<HtmlQuestion/>
+            },
+            {
+              path:"/subjects/css",
+              element:<CSSQuestions/>
+            },
+            {
+              path:"/subjects/react",
+              element:<ReactQuestion/>
+            },
+            {
+              path:"/subjects/javascript",
+              element:<JavaScriptQuestion/>
             }
           ]
         },
