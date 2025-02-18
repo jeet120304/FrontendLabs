@@ -34,8 +34,13 @@
 // export default About
 import React from "react";
 import { motion } from "framer-motion"; // Import Framer Motion
+import { Link } from "react-router-dom";
+// import Team from "./Team";
+// import LearnMore from "./LearnMore";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const nevigate = useNavigate();
   return (
     <div className="container-fluid p-0">
       <motion.header
@@ -65,19 +70,33 @@ const About = () => {
               and React to prepare for your next technical interview.
             </h5>
           </motion.div>
-          <motion.div
+          <div className="d-flex gap-4">
+          {/* <motion.div
             className="mt-4"
             whileHover={{ scale: 1 }} // Button hover effect
             whileTap={{ scale: 0.9 }} // Button click effect
           >
             <a
               target="blank"
-              href="https://www.geeksforgeeks.org/front-end-development/#:~:text=The%20frontend%20is%20what%20users,8%20min%20read"
-              className="btn btn-primary border border-black"
+              href="https://blog.eduonix.com/wp-content/uploads/2024/09/1__ZGsdHEjO2VsmNF_yDggwQ.png"
+              className="btn btn-primary border border-black p-1"
             >
               Learn More
             </a>
-          </motion.div>
+            
+          </motion.div> */}
+          <motion.button 
+          className="mt-4 btn btn-primary border border-black p-1" 
+          whileHover={{ scale: 1 }} 
+          whileTap={{ scale: 0.9 }}
+          onClick={()=>{nevigate("/learnmore")}}>Learn More</motion.button>
+          <motion.button
+          className="mt-4 btn btn-success border border-black p-1" 
+          whileHover={{ scale: 1 }} 
+          whileTap={{ scale: 0.9 }}
+          onClick={()=>{nevigate("/ourTeam")}}>Our Team</motion.button>
+
+          </div>
         </motion.div>
 
         <motion.div
@@ -99,6 +118,7 @@ const About = () => {
           />
         </motion.div>
       </motion.header>
+
       
     </div>
   );

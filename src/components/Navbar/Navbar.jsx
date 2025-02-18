@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/LabsLogo.png";
+import logo from "../../assets/images/blackbglogo1.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -13,8 +13,8 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
       <div className="container-fluid">
-        {/* Left Side: Logo & Website Name */}
-        <a className="navbar-brand d-flex align-items-center" href="#">
+        {/* Left Side: Logo & Clickable Website Name */}
+        <Link to="/" className="navbar-brand d-flex align-items-center" onClick={toggleNavbar}>
           <img
             src={logo}
             alt="Logo"
@@ -25,7 +25,7 @@ const Navbar = () => {
           <span className="fs-4 fw-bold gradient-text animate__hinge labs">
             FrontendLabs
           </span>
-        </a>
+        </Link>
 
         {/* Mobile Toggle Button */}
         <button

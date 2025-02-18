@@ -1,0 +1,46 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.team-card {
+  width: 400px;
+  height: 180px;
+  background: #fff;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #000;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.role-highlight {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #007bff; /* Highlight the role */
+}

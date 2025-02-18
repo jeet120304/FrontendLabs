@@ -2,7 +2,7 @@ import React from 'react'
 import "./footer.css"
 import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
-import LabsLogo from "../../assets/images/LabsLogo.png"
+import LabsLogo from "../../assets/images/blackbglogo1.png"
 
 const Footer = () => {
   return (
@@ -16,10 +16,10 @@ const Footer = () => {
 
        <ul className="footer-section">
             <li><h5>Useful Links</h5></li>
-            <li><NavLink >Home</NavLink></li>
-            <li><NavLink >About</NavLink></li>
-            <li><NavLink >Questions</NavLink></li>
-            <li><NavLink >Contact</NavLink></li>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/questions" >Questions</NavLink></li>
+            <li><NavLink to="/contact" >Contact</NavLink></li>
         </ul>
 
         <ul className="footer-section">

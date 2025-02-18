@@ -5,6 +5,7 @@ import Questions from '../questions/Questions'
 import Footer from '../Footer/Footer'
 import Hero from './Hero'
 
+
 const Home = () => {
   return (
     <div >

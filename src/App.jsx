@@ -11,6 +11,8 @@ import Contact from './components/Contact/Contact'
 import CSSQuestions from './components/questions/CSSQuestions/CSSQuestions'
 import ReactQuestion from './components/questions/ReactQuestions/ReactQuestion'
 import JavaScriptQuestion from './components/questions/JavascriptQuestions/JavascriptQuestion'
+import Team from './components/About/Team'
+import LearnMore from './components/About/LearnMore'
 
 function App() {
   const route=createBrowserRouter([
@@ -42,6 +44,14 @@ function App() {
           element:<About/>
         },
         {
+          path:"/ourTeam",
+          element:<Team/>
+        },
+        {
+          path:"/learnmore",
+          element:<LearnMore/>
+        },
+        {
           path:"/questions",
           element:<Questions/>
         },
@@ -49,6 +59,7 @@ function App() {
           path:"/contact",
           element:<Contact/>
         },
+        
         {
           path:"/subjects",
           element:<Subjects/>,
