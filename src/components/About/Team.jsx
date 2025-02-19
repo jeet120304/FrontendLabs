@@ -1,19 +1,24 @@
 import React from "react";
-import "./Team.css"; // Optional CSS file for custom styles
-// Replace with actual images
-import abhijeetimg from "../../assets/images/abhijeetimg.jpeg"
-import laxmiimg from "../../assets/images/Laxmiimg.jpeg"
-import snigdhaimg from "../../assets/images/snigdhaimg.jpeg"
-import jaybabuimg from "../../assets/images/jaybabuimg.jpeg"
+import "./Team.css"; // Ensure this contains spacing fixes
+import abhijeetimg from "../../assets/images/abhijeetimg.jpeg";
+import laxmiimg from "../../assets/images/Laxmiimg.jpeg";
+import snigdhaimg from "../../assets/images/snigdhaimg.jpeg";
+import jaybabuimg from "../../assets/images/jaybabuimg.jpeg";
+import abhilipsaimg from "../../assets/images/Abhilipsaimg.jpeg";
+import sumanimg from "../../assets/images/sumanimg.jpeg";
+import gauravimg from "../../assets/images/gauravimg.jpeg";
 
 const teamMembers = [
-  { name: "Laxmipriya Ojha", img:laxmiimg },
-  { name: "Snigdha Panda", img:snigdhaimg },
-  { name: "Jaybabu Sharma", img:jaybabuimg },
-  { name: "Abhilipsa Senapati", img: "https://via.placeholder.com/100" },
-  { name: "Suman", img: "https://via.placeholder.com/100" },
-  { name: "Gaurav Maharana", img: "https://via.placeholder.com/100" },
-  { name: "Biswajit", img: "https://media.licdn.com/dms/image/v2/D5603AQEzIVpnvglnaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723961314666?e=1745452800&v=beta&t=bSJ3f4d6tMr5tMPYpvJXdpsGjm5jj5BO_Vpb7YzliD8" },
+  { name: "Laxmipriya Ojha", img: laxmiimg },
+  { name: "Snigdha Panda", img: snigdhaimg },
+  { name: "Jaybabu Sharma", img: jaybabuimg },
+  { name: "Avilipsa Senapati", img: abhilipsaimg },
+  { name: "Smurnarani Balmuch", img: sumanimg },
+  { name: "Gaurav Maharana", img: gauravimg },
+  { 
+    name: "Biswajit Sahu", 
+    img: "https://media.licdn.com/dms/image/v2/D5603AQEzIVpnvglnaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723961314666?e=1745452800&v=beta&t=bSJ3f4d6tMr5tMPYpvJXdpsGjm5jj5BO_Vpb7YzliD8" 
+  },
 ];
 
 const Team = () => {
@@ -24,22 +29,21 @@ const Team = () => {
       {/* Team Lead */}
       <div className="row justify-content-center mb-4">
         <div className="col-md-4">
-          <div className="card team-card p-3">
-            <img src={abhijeetimg} alt="Team Lead" 
-            className="team-photo  mx-auto " />
+          <div className="card team-card p-3 text-center">
+            <img src={abhijeetimg} alt="Abhijeet Gouda - Team Lead" className="team-photo mx-auto rounded-circle" />
             <h5 className="mt-3">Abhijeet Gouda</h5>
-            <p className="role text-primary">Team Lead</p>
+            <h5 className="role text-primary">Team Lead</h5>
           </div>
         </div>
       </div>
 
       {/* Developers Section */}
-      <div className="row">
-        <h3 className="mb-3">Developers</h3>
+      <div className="row g-4"> {/* Added g-4 for spacing */}
+        <h3 className="mb-3 w-100">Developers</h3>
         {teamMembers.map((member, index) => (
-          <div key={index} className="col-md-4 col-sm-6 mb-3">
-            <div className="card team-card p-3">
-              <img src={member.img} alt={member.name} className="team-photo mx-auto" />
+          <div key={index} className="col-lg-3 col-md-4 col-sm-6">
+            <div className="card team-card p-3 text-center">
+              <img src={member.img} alt={`${member.name} - Developer`} className="team-photo mx-auto rounded-circle" />
               <h5 className="mt-3">{member.name}</h5>
             </div>
           </div>
@@ -50,3 +54,4 @@ const Team = () => {
 };
 
 export default Team;
+

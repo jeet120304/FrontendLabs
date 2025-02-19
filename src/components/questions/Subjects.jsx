@@ -175,7 +175,7 @@ const Subjects = () => {
       <Container className="my-5">
       <Row className="justify-content-center subjects-container">
   {subjects.map((subject, index) => (
-    <Col key={index} lg={2} md={5} sm={5} xs={12} className="mb-4 subject-column p-2 h-25% w-25%">
+    <Col key={index} lg={3} md={3} sm={5} xs={12} className="mb-4 subject-column p-2 h-25% w-25%">
       <motion.div 
         initial={{ opacity: 0, scale: 0.8 }} 
         animate={{ opacity: 1, scale: 1 }} 
