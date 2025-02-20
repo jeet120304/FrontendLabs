@@ -5,7 +5,7 @@ import css from "../../assets/images/css.png"
 import js from "../../assets/images/js.png"
 import htmlCanva from "../../assets/images/htmlCanva.png"
 import reactIconMain from "../../assets/images/React-icon-library.webp"
-import ReactLogo from "../../assets/images/ReactLogo.png"
+import ReactLogo from "../../assets/images/reactLogo.png"
 
 
 

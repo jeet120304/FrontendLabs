@@ -24,7 +24,7 @@ const teamMembers = [
 const Team = () => {
   return (
     <div className="container text-center py-4">
-      <h1 className="mb-4 text-secondary">Meet Our Team</h1>
+      <h1 className="mb-4 text-secondary">Meet Our Teams</h1>
 
       {/* Team Lead */}
       <div className="row justify-content-center mb-4">
@@ -38,13 +38,14 @@ const Team = () => {
       </div>
 
       {/* Developers Section */}
-      <div className="row g-4"> {/* Added g-4 for spacing */}
+      <div className="row g-4 justify-content-center"> 
         <h3 className="mb-3 w-100">Developers</h3>
         {teamMembers.map((member, index) => (
           <div key={index} className="col-lg-3 col-md-4 col-sm-6">
             <div className="card team-card p-3 text-center">
-              <img src={member.img} alt={`${member.name} - Developer`} className="team-photo mx-auto rounded-circle" />
+              <img src={member.img} alt={`Developer`} className="team-photo mx-auto rounded-circle" />
               <h5 className="mt-3">{member.name}</h5>
+              <h5 className="mt-3 text-primary">Developer</h5>
             </div>
           </div>
         ))}
