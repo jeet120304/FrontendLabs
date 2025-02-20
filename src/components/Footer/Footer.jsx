@@ -1,5 +1,5 @@
 import React from 'react'
-import "./footer.css"
+import "./Footer.css"
 import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 import LabsLogo from "../../assets/images/blackbglogo1.png"
