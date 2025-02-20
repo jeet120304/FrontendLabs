@@ -1,7 +1,7 @@
 import React from "react";
 import "./Team.css"; // Ensure this contains spacing fixes
 import abhijeetimg from "../../assets/images/abhijeetimg.jpeg";
-import laxmiimg from "../../assets/images/Laxmiimg.jpeg";
+import laxmiimg from "../../assets/images/laxmiimg.jpeg";
 import snigdhaimg from "../../assets/images/snigdhaimg.jpeg";
 import jaybabuimg from "../../assets/images/jaybabuimg.jpeg";
 import abhilipsaimg from "../../assets/images/Abhilipsaimg.jpeg";

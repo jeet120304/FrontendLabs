@@ -1,35 +1,3 @@
-// import React from 'react'
-// // import aboutImage from "../../assets/images/aboutImage.png"
-// const About = () => {
-//   return (
-
-//     <div className="container-fluid p-0">
-//       {/* Hero Section */}
-//       <header className="hero-section d-flex align-items-center justify-content-between px-5 py-5">
-//         <div className="text-container">
-//           <p className="text-primary"><h2 className='animate__slideOutUp'>Welcome to Our Frontend Interview Questions Platform</h2></p>
-//           <h1 className="fw-bold">Discover Challenging and Engaging</h1>
-//             <h1 className="fw-bold"> Frontend Interview Questions</h1>
-//           <p className='text-primary'>
-//             <h5>Explore a vast collection of frontend interview questions across HTML, CSS, JavaScript,
-//              <br/>and React to prepare for your next technical interview.</h5>
-//           </p>
-//           <div className="mt-4">
-//             <a target='blank' href="https://www.geeksforgeeks.org/front-end-development/#:~:text=The%20frontend%20is%20what%20users,8%20min%20read" className="btn btn-primary border border-black">
-//             Learn More
-//             </a>
-//           </div>
-//         </div>
-//         <div className="image-fluid w-50 h-auto">
-//           <img src='https://cdni.iconscout.com/illustration/premium/thumb/frontend-developer-illustration-download-in-svg-png-gif-file-formats--website-development-web-programming-backend-programmer-pack-design-illustrations-6109659.png'
-//           // style={{ maxWidth: '300px', height: '300px', objectFit: 'cover' }}
-//           />
-//         </div>
-//       </header>
-//     </div>
-//   );
-// }
-
 
 // export default About
 import React from "react";
@@ -71,20 +39,6 @@ const About = () => {
             </h5>
           </motion.div>
           <div className="d-flex gap-4">
-          {/* <motion.div
-            className="mt-4"
-            whileHover={{ scale: 1 }} // Button hover effect
-            whileTap={{ scale: 0.9 }} // Button click effect
-          >
-            <a
-              target="blank"
-              href="https://blog.eduonix.com/wp-content/uploads/2024/09/1__ZGsdHEjO2VsmNF_yDggwQ.png"
-              className="btn btn-primary border border-black p-1"
-            >
-              Learn More
-            </a>
-            
-          </motion.div> */}
           <motion.button 
           className="mt-4 btn btn-primary border border-black p-1" 
           whileHover={{ scale: 1 }} 
